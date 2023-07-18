@@ -1,0 +1,273 @@
+/* Universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Fonts import */
+@font-face {
+    font-family: autumnflowers;
+    src: url(./fonts/AutumnFlowers-9YVZK.otf);
+}
+
+/* Sidebar*/
+.sidebar{
+    background-image: url(./Images/navbg_image.jpg);
+    background-size: cover;
+    color: white;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    float: left;
+}
+
+#brandname{
+    font-family: autumnflowers;
+    color: white;
+    text-align: center;
+    font-size: 2.2rem;
+    padding-top: 20%;
+}
+
+.sidebar_content{
+    padding-left: 1rem;
+    padding-top: 4rem;
+}
+
+.sidebar_content ul{
+    list-style-type: none;
+}
+
+.sidebar_content ul li{
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: 'Trirong', serif;
+    text-decoration: none;
+}
+
+.sidebar_content ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.sidebar_content ul li a:hover{
+    color: white;
+}
+
+#copyrights{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+    padding-left: 1rem;
+    position:fixed;
+    top: 95%;
+}
+
+#socialmedia{
+    position: fixed;
+    top: 88%;
+}
+
+#socialmedia img{
+    padding-left: 1.5rem;
+}
+
+/*Main Content section*/
+.main{
+    padding-left: 20vw;
+}
+
+/* Home section */
+#home{
+    height: 100vh;
+    background-image: linear-gradient(to left, black, transparent), url(./Images/homebg_image.jpg);
+    background-size: cover;
+    color: white;
+    padding: 15vw;
+}
+.bigtext{
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+}
+
+.smalltext{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    color: rgba(255, 255, 255, 1)
+}
+
+#getstarted{
+    width: 10vw;
+    height: 5vh;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: rgba(92, 45, 13, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.1rem;
+}
+
+#getstarted:hover{
+    background-color: rgba(92, 45, 13, 1);
+    color: black;
+}
+
+/* Bio Section */
+#bio{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(237, 219, 199), rgb(248, 234, 216), white);
+    margin-bottom: 2vh;
+}
+#bio img{
+    height: 80vh;
+    float: right;
+    margin: 8vh 2vw 0 2vw;
+}
+.biotext{
+    padding-top: 8vh;
+    padding-left: 3vw;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+}
+.biotext p{
+    padding-bottom: 4vh;
+}
+.italics{
+    font-style: italic;
+}
+#bioquote{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+#bioquote:before{
+    content: open-quote;
+    color: red;
+    font-size: 4rem;
+    font-weight: bold;
+}
+#bioquote:after{
+    content: close-quote;
+    color: red;
+    font-size: 4rem;
+    font-weight: bold;
+}
+#device{
+    text-decoration: none;
+    color: red;
+}
+
+/* Portraits section */
+#portraits{
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-row-gap: 1vw;
+    grid-column-gap: 1vw;
+}
+
+#portraits a{
+    background-color: black;
+}
+
+#portraits img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+#portraits img:hover{
+    opacity: 1;
+}
+
+/*  Landscapes section */
+#landscapes{
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 99%;
+    grid-row-gap: 1.4vw;
+}
+#landscapes a{
+    background-color: black;
+}
+
+#landscapes img{
+    width: 100%;
+    opacity: 0.5;
+}
+
+#landscapes img:hover{
+    opacity: 1;
+}
+
+/* Contact */
+
+#contact h2{
+    padding: 3vh;
+    font-size: 3rem;
+    margin-left: 10vw;
+}
+
+#contact{
+    height: 100vh;
+}
+
+#contact p{
+    float: right;
+    padding-right: 1vw;
+}
+
+#contact img{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+#contact form{
+    font-size: 1.1rem;
+    padding-top: 4vh;
+    float: right;
+    padding-right: 8vw;
+}
+
+#contact form input{
+    width: 30vw;
+    height: 4vh;
+    margin-bottom: 2vh;
+}
+
+label, input{
+    display: block;
+}
+
+textarea#address{
+    width: 30vw;
+    height: 10vh;
+    resize: none;
+    margin-bottom: 2vh;
+}
+
+form select{
+    display: inline;
+    margin-bottom: 2vh;
+}
+
+textarea#subject{
+    width: 30vw;
+    height: 21vh;
+    resize: none;
+}
+
+#submitbtn{
+    display: block;
+    width: 6vw;
+    height: 4vh;
+    margin-top: 2vh;
+    border-radius: 1rem;
+    border: 2px solid rgb(35, 129, 217);
+    background-color: rgba(135, 207, 235, 0.133);
+}
+#submitbtn:hover{
+    background-color: rgb(101, 195, 232);
+    color: aliceblue;
+}

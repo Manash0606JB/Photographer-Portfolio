@@ -201,26 +201,57 @@
 }
 
 /* Contact */
-
 #contact h2{
     padding: 3vh;
     font-size: 3rem;
     margin-left: 10vw;
 }
-
+#contact label{
+    font-weight: bold;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.ContactForm input[type="text"],
+    .ContactForm input[type="email"],
+    .ContactForm textarea,
+    .ContactForm select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .ContactForm select {
+        height: 40px;
+      }
+.ContactForm{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
 #contact{
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 #contact p{
     float: right;
     padding-right: 1vw;
+    font-weight: bold;
+    font-size: 16px;
+      margin-bottom: 20px;
 }
 
 #contact img{
-    width: 50%;
+    width: 80%;
     height: auto;
     float: left;
+    flex: 1;
+    max-width: 100%;
 }
 
 #contact form{
@@ -260,14 +291,15 @@ textarea#subject{
 
 #submitbtn{
     display: block;
-    width: 6vw;
-    height: 4vh;
     margin-top: 2vh;
-    border-radius: 1rem;
-    border: 2px solid rgb(35, 129, 217);
-    background-color: rgba(135, 207, 235, 0.133);
+    color: white;
+    background-color: #4CAF50;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
 }
 #submitbtn:hover{
-    background-color: rgb(101, 195, 232);
-    color: aliceblue;
+    background-color: #45a049;
 }

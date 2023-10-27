@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhritisman Barman| My vision of nature</title>
+    <title>Admin Pannel | Dhritisman Barman</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 <body>
+    <?php
+    session_start();
+    if ($_SESSION['loggedIn']==false) {
+        header('Location: adminLogin.php');
+        session_abort();
+    }
+    ?>
     <section class="sidebar">
-        <div id="brandname">Dhritisman Barman</div>
+        <div id="brandname">Admin Pannel</div>
         <div class="sidebar_content">
             <ul>
-                <li><a href="Index.php">Home</a></li>
-                <li><a href="bio.php">Bio</a></li>
-                <li><a href="portraits.php">Portraits</a></li>
-                <li><a href="landscapes.php">Landscapes</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="adminLogin.php">Admin Pannel</a></li>
+                <li><a href="adminHome.php">Admin Home</a></li>
+                <li><a href="viewPortrait.php">View Portraits</a></li>
+                <li><a href="viewLandscape.php">View Landscapes</a></li>
+                <li><a href="portraitUpload.php">Upload Portraits</a></li>
+                <li><a href="landscapeUpload.php">Upload Landscapes</a></li>
+                <li><a href="Messages.php">Messages</a></li>
+                <li><a href="Index.php">< Back to home page</a></li>
             </ul>
-        </div>
-        <div id="socialmedia">
-            <a href="https://twitter.com/_Dhritisman_?s=20" target="_blank"><img src="./Images/twitter_logo.png" alt="Twitter profile""></a>
-            <a href="https://www.instagram.com/dhritisman_10/" target="_blank"><img src="./Images/Instagram_logo.png" alt="Instagram profile"></a>
         </div>
         <div id="copyrights">
             <p>© COPYRIGHT</p>

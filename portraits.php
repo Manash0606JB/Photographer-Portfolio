@@ -1,22 +1,20 @@
 <?php
 include "components/nav.php";
+include "components/dbconn.php";
 ?>
 <section class="main">
   <div id="portraits">
-            <a href=""><img src="./Images/portraits/IMG (1).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (2).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (3).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (4).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (5).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (6).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (7).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (8).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (9).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (10).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (11).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (12).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (13).jpg" alt=""></a>
-            <a href=""><img src="./Images/portraits/IMG (14).jpg" alt=""></a>
+  <?php
+    $sql1 = "SELECT * FROM `portraits` ORDER BY `Sl no.` DESC;";
+    $res1 = mysqli_query($conn,$sql1);
+    $num1 = mysqli_num_rows($res1);
+    if ($num1>0) {
+      for ($i=1; $i <= $num1 ; $i++) { 
+        $data1 = mysqli_fetch_assoc($res1);
+        echo '<a href="./'.$data1['imgName'].'"><img src="./'.$data1['imgName'].'" alt="image"></a>';
+      }
+    }
+    ?>
         </div>
 </section>
             </body>

@@ -12,15 +12,15 @@ include "components/nav.php";
     <div style="display: flex; flex-direction: row, flex-wrap: wrap;">
       <div class="ContactForm">
         <p>You can contact me for the purpose of hiring, partnerships, or to participate in programs.</p>
-        <form action="">
+        <form action="components/sendMessage.php" method="post">
           <label for="firstname">First Name</label>
-          <input type="text" name="First Name" id="firstname" placeholder="Enter your First Name">
+          <input type="text" name="firstname" id="firstname" placeholder="Enter your First Name">
           <label for="lastname">Last Name</label>
-          <input type="text" name="Last Name" id="lastname" placeholder="Enter your Last Name">
+          <input type="text" name="lastname" id="lastname" placeholder="Enter your Last Name">
           <label for="email">E-Mail</label>
-          <input type="email" name="E-Mail" id="email" placeholder="Enter your email">
+          <input type="email" name="email" id="email" placeholder="Enter your email">
           <label for="address">Address</label>
-          <textarea name="Address" id="address" placeholder="Enter your full address here"></textarea>
+          <textarea name="address" id="address" placeholder="Enter your full address here"></textarea>
           <label for="country">Select your country:</label>
           <select name="country" id="country">
             <option value="India">India</option>
@@ -34,7 +34,7 @@ include "components/nav.php";
             <option value="Brazil">Brazil</option>
           </select>
           <label for="subject">Subject</label>
-          <textarea name="Subject" id="subject" placeholder="Write something here...."></textarea>
+          <textarea name="subject" id="subject" placeholder="Write something here...."></textarea>
           <button type="submit" id="submitbtn">Submit</button>
         </form>
       </div>

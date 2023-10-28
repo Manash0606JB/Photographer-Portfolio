@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Admin Pannel | Dhritisman Barman</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
                 <li><a href="portraitUpload.php">Upload Portraits</a></li>
                 <li><a href="landscapeUpload.php">Upload Landscapes</a></li>
                 <li><a href="Messages.php">Messages</a></li>
-                <li><a href="Index.php">< Back to home page</a></li>
+                <li><a href="components/logout.php"> Log out</a></li>
             </ul>
         </div>
         <div id="copyrights">

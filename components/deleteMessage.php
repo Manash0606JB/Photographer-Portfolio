@@ -1,4 +1,9 @@
 <?php
+session_start();
+if ($_SESSION['loggedIn']==false) {
+    header('Location: ../adminLogin.php');
+    session_abort();
+}
 include "dbconn.php";
 if ($_SERVER['REQUEST_METHOD']=="GET") {
     $Sln = $_GET['sl_no'];
